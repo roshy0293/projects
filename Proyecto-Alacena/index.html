@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alacena Mágica - Descubre recetas deliciosas y saludables para cada ocasión. Desayunos, almuerzos, cenas y postres preparados con amor.">
+  <meta name="keywords" content="recetas, cocina, comida saludable, desayunos, almuerzos, cenas, postres, cocina casera">
+  <meta name="author" content="Alacena Mágica">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alacena Mágica - Recetas Deliciosas y Saludables">
+  <meta property="og:description" content="Descubre recetas deliciosas y saludables para cada ocasión.">
+  <meta property="og:image" content="assets/logos/Alacena_Magica_Alacena_Magica_Logo_Color.png">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>Alacena Mágica - Recetas Deliciosas y Saludables</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Alacena_Magica_Logo.svg">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  
+  <!-- Header Component (injected via JS) -->
+  <div id="header-container"></div>
+  
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">Cocina con Amor, Vive con Sabor</h1>
+          <p class="hero__subtitle">Tu fuente de inspiración culinaria diaria</p>
+          <p class="hero__description">
+            En Alacena Mágica creemos que cocinar es un acto de amor. Descubre cientos de recetas 
+            fáciles, saludables y deliciosas para compartir con quienes más quieres. Desde desayunos 
+            energéticos hasta cenas reconfortantes, tenemos algo especial para cada momento.
+          </p>
+          <div class="hero__buttons">
+            <a href="#recetas" class="hero__btn hero__btn--primary">Explorar Recetas</a>
+            <a href="#beneficios" class="hero__btn hero__btn--secondary">Conocer Más</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/logos/Alacena_Magica_Alacena_Magica_Logo_Color.png" alt="Deliciosos platos preparados con ingredientes frescos" width="500" height="400" loading="eager">
+        </div>
+      </div>
+    </section>
+    
+    <!-- Filters Section -->
+    <section class="filters" aria-labelledby="filters-title">
+      <div class="container filters__container">
+        <span id="filters-title" class="filters__title">Filtrar por:</span>
+        <div class="filters__list" role="tablist" aria-label="Filtros de categorías de recetas">
+          <button class="filters__btn filters__btn--active" data-filter="todas" role="tab" aria-selected="true">Todas</button>
+          <button class="filters__btn" data-filter="desayunos" role="tab" aria-selected="false">Desayunos</button>
+          <button class="filters__btn" data-filter="almuerzos" role="tab" aria-selected="false">Almuerzos</button>
+          <button class="filters__btn" data-filter="cenas" role="tab" aria-selected="false">Cenas</button>
+          <button class="filters__btn" data-filter="postres" role="tab" aria-selected="false">Postres</button>
+          <button class="filters__btn" data-filter="vegetariano" role="tab" aria-selected="false">Vegetariano</button>
+          <button class="filters__btn" data-filter="rapido" role="tab" aria-selected="false">Rápido</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recipes Grid -->
+    <section id="recetas" class="recipes section" aria-labelledby="recipes-title">
+      <div class="container">
+        <h2 id="recipes-title" class="sr-only">Recetas Destacadas</h2>
+        <div class="recipes__container" role="feed" aria-label="Lista de recetas">
+          
+          <!-- Recipe Card 1 -->
+          <article class="recipe-card" data-category="desayunos" aria-labelledby="recipe-1-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Panqueques esponjosos con frutas frescas y miel" loading="lazy" width="400" height="300">
+              <span class="recipe-card__badge">Destacado</span>
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Desayunos</span>
+              <h3 id="recipe-1-title" class="recipe-card__title">Panqueques Esponjosos con Frutas</h3>
+              <p class="recipe-card__description">
+                Comienza tu día con estos panqueques increíblemente esponjosos, acompañados de frutas 
+                frescas de temporada y un toque de miel orgánica.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  20 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  4 personas
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+          <!-- Recipe Card 2 -->
+          <article class="recipe-card" data-category="almuerzos" aria-labelledby="recipe-2-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Ensalada mediterránea fresca con quinoa" loading="lazy" width="400" height="300">
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Almuerzos</span>
+              <h3 id="recipe-2-title" class="recipe-card__title">Ensalada Mediterránea con Quinoa</h3>
+              <p class="recipe-card__description">
+                Una opción ligera y nutritiva perfecta para el almuerzo. Quinoa, vegetales frescos, 
+                aceitunas y queso feta con aderezo de limón.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  15 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  2 personas
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+          <!-- Recipe Card 3 -->
+          <article class="recipe-card" data-category="cenas" aria-labelledby="recipe-3-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Salmón al horno con vegetales asados" loading="lazy" width="400" height="300">
+              <span class="recipe-card__badge">Saludable</span>
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Cenas</span>
+              <h3 id="recipe-3-title" class="recipe-card__title">Salmón al Horno con Vegetales</h3>
+              <p class="recipe-card__description">
+                Cena elegante pero sencilla. Salmón fresco horneado con hierbas aromáticas, 
+                acompañado de vegetales de temporada asados a la perfección.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  35 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  3 personas
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+          <!-- Recipe Card 4 -->
+          <article class="recipe-card" data-category="postres" aria-labelledby="recipe-4-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Tarta de chocolate sin harina" loading="lazy" width="400" height="300">
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Postres</span>
+              <h3 id="recipe-4-title" class="recipe-card__title">Tarta de Chocolate Sin Harina</h3>
+              <p class="recipe-card__description">
+                Un postre decadente para los amantes del chocolate. Intenso, húmedo y completamente 
+                libre de harina. Perfecto para ocasiones especiales.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  50 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  8 personas
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+          <!-- Recipe Card 5 -->
+          <article class="recipe-card" data-category="vegetariano" aria-labelledby="recipe-5-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Curry de garbanzos y espinacas" loading="lazy" width="400" height="300">
+              <span class="recipe-card__badge">Vegano</span>
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Vegetariano</span>
+              <h3 id="recipe-5-title" class="recipe-card__title">Curry de Garbanzos y Espinacas</h3>
+              <p class="recipe-card__description">
+                Un plato vegetariano lleno de sabor y proteínas. Garbanzos tiernos en una salsa 
+                de curry cremosa con espinacas frescas y especias aromáticas.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  30 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  4 personas
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+          <!-- Recipe Card 6 -->
+          <article class="recipe-card" data-category="rapido" aria-labelledby="recipe-6-title">
+            <div class="recipe-card__image">
+              <img src="assets/logos/Alacena_Magica_Pattern.png" alt="Wrap de pollo y aguacate express" loading="lazy" width="400" height="300">
+            </div>
+            <div class="recipe-card__content">
+              <span class="recipe-card__category">Rápido</span>
+              <h3 id="recipe-6-title" class="recipe-card__title">Wrap de Pollo y Aguacate Express</h3>
+              <p class="recipe-card__description">
+                Perfecto para cuando tienes poco tiempo. Tortilla integral rellena de pollo a la 
+                plancha, aguacate cremoso y vegetales crujientes. Listo en minutos.
+              </p>
+              <div class="recipe-card__meta">
+                <span class="recipe-card__time">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                  10 min
+                </span>
+                <span class="recipe-card__servings">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  1 persona
+                </span>
+              </div>
+              <a href="#" class="recipe-card__link">Ver Receta Completa</a>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="beneficios" class="features section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="sr-only">Por Qué Elegir Alacena Mágica</h2>
+        <div class="features__container">
+          
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Recetas Probadas</h3>
+            <p class="feature-card__description">
+              Cada receta es cuidadosamente testeada en nuestra cocina para garantizar resultados 
+              perfectos en tu hogar.
+            </p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Ingredientes Accesibles</h3>
+            <p class="feature-card__description">
+              Utilizamos ingredientes que puedes encontrar fácilmente en tu mercado local, sin 
+              complicaciones ni gastos extras.
+            </p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Para Todos los Niveles</h3>
+            <p class="feature-card__description">
+              Desde principiantes hasta chefs experimentados, nuestras recetas incluyen instrucciones 
+              claras paso a paso.
+            </p>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Comunidad Activa</h3>
+            <p class="feature-card__description">
+              Únete a miles de cocineros apasionados que comparten sus experiencias, tips y 
+              variaciones de nuestras recetas.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter section" aria-labelledby="newsletter-title">
+      <div class="container newsletter__container">
+        <h2 id="newsletter-title" class="newsletter__title">Recibe Recetas Exclusivas</h2>
+        <p class="newsletter__description">
+          Suscríbete a nuestro newsletter y recibe cada semana recetas inéditas, consejos de cocina 
+          y descuentos especiales. ¡Únete a nuestra comunidad culinaria!
+        </p>
+        <form class="newsletter__form" action="#" method="POST" novalidate>
+          <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+          <input 
+            type="email" 
+            id="newsletter-email" 
+            class="newsletter__input" 
+            placeholder="tu@email.com" 
+            required
+            autocomplete="email"
+            aria-required="true"
+          >
+          <button type="submit" class="newsletter__submit">Suscribirme Gratis</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer Component (injected via JS) -->
+  <div id="footer-container"></div>
+  
+  <!-- Scripts -->
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Inline script to render components -->
+  <script>
+    // Render Header
+    document.getElementById('header-container').innerHTML = Header.render();
+    
+    // Render Footer
+    document.getElementById('footer-container').innerHTML = Footer.render();
+  </script>
+</body>
+</html>
