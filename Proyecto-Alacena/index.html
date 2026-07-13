@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alacena Mágica - Transforma los ingredientes que ya tienes en recetas deliciosas. Sin desperdicio, sin complicaciones, pura magia culinaria.">
+  <meta name="keywords" content="recetas, cocina, ingredientes, despensa, comida, app, foodtech, desperdicio cero">
+  <meta name="author" content="Alacena Mágica">
+  <meta name="theme-color" content="#459b5b">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alacena Mágica - Crea magia con lo que tienes">
+  <meta property="og:description" content="Transforma los ingredientes que ya tienes en recetas deliciosas. Sin desperdicio, sin complicaciones.">
+  <meta property="og:image" content="assets/logos/Alacena_Magica_Logo.svg">
+  
+  <title>Alacena Mágica - Crea magia con lo que tienes</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Alacena_Magica_Logo.svg">
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════
+       HEADER & NAVEGACIÓN
+       ═══════════════════════════════════════════════════ -->
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="nav-logo" aria-label="Alacena Mágica - Inicio">
+        <img src="assets/logos/Alacena_Magica_Logo.svg" alt="Logo Alacena Mágica - Cuchara mágica" width="48" height="48">
+        <span>Alacena Mágica</span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Inicio</a></li>
+        <li><a href="#features" class="nav-link">Características</a></li>
+        <li><a href="#how-it-works" class="nav-link">Cómo funciona</a></li>
+        <li><a href="#benefits" class="nav-link">Beneficios</a></li>
+        <li><a href="#gallery" class="nav-link">Galería</a></li>
+        <li><a href="#final-cta" class="btn btn-primary btn-sm">Descubre la magia →</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main role="main">
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 1: HERO
+         ═══════════════════════════════════════════════════ -->
+    <section id="hero" class="hero section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content fade-in">
+            <h1 id="hero-title" class="hero-title">¿Qué tienes en la nevera? ¡Veamos qué podemos crear!</h1>
+            <p class="hero-subtitle">Transforma los ingredientes que ya tienes en recetas deliciosas. Sin desperdicio, sin complicaciones, pura magia culinaria.</p>
+            <div class="hero-cta">
+              <a href="#final-cta" class="btn btn-primary btn-lg">Descubre la magia →</a>
+              <a href="#features" class="btn btn-secondary btn-lg">Ver cómo funciona</a>
+            </div>
+          </div>
+          
+          <div class="hero-mockup fade-in">
+            <!-- Mockup 1: Home Screen -->
+            <div class="phone-mockup" role="img" aria-label="Pantalla de inicio de Alacena Mágica mostrando saludo, tarjeta mágica, ingredientes y receta sugerida">
+              <div class="phone-screen">
+                <div class="app-header">
+                  <div class="app-greeting">Buenos días 👋 María</div>
+                  <div class="app-subtitle">¿Qué vamos a cocinar hoy?</div>
+                </div>
+                
+                <div class="magic-card">
+                  <div class="magic-card-title">✨ Tienes 8 ingredientes listos</div>
+                  <div class="magic-card-text">Podemos crear 12 recetas mágicas</div>
+                </div>
+                
+                <div class="ingredients-section">
+                  <div class="ingredients-title">Tus ingredientes</div>
+                  <div class="chips-container">
+                    <span class="chip selected">🍅 Tomate</span>
+                    <span class="chip selected">🧀 Queso</span>
+                    <span class="chip selected">🥚 Huevos</span>
+                    <span class="chip selected">🧄 Ajo</span>
+                    <span class="chip selected">🫒 Aceite</span>
+                    <span class="chip-add" aria-label="Añadir ingrediente">+</span>
+                  </div>
+                </div>
+                
+                <div class="recipe-section">
+                  <div class="recipe-card">
+                    <div class="recipe-thumbnail">🍳</div>
+                    <div class="recipe-info">
+                      <div class="recipe-title">Tortilla española express</div>
+                      <div class="recipe-meta">
+                        <span>⏱ 20 min</span>
+                        <span>🔥 Fácil</span>
+                      </div>
+                      <span class="recipe-match">✨ 95% match</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <nav class="app-nav" aria-label="Navegación de la app">
+                  <a href="#" class="nav-item active" aria-label="Inicio">
+                    <span class="nav-item-icon">🏠</span>
+                    <span>Inicio</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Buscar">
+                    <span class="nav-item-icon">🔍</span>
+                    <span>Buscar</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Despensa">
+                    <span class="nav-item-icon">📦</span>
+                    <span>Despensa</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Perfil">
+                    <span class="nav-item-icon">👤</span>
+                    <span>Perfil</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 2: PROBLEM/SOLUTION
+         ═══════════════════════════════════════════════════ -->
+    <section class="problem-solution section" aria-labelledby="problem-title">
+      <div class="container">
+        <h2 id="problem-title" class="problem-title fade-in">¿Te suena familiar?</h2>
+        
+        <div class="problem-grid">
+          <article class="problem-card fade-in">
+            <div class="problem-icon" aria-hidden="true">🧊</div>
+            <h3>Abres la nevera y... nada te inspira</h3>
+            <p>Miras una y otra vez, pero no se te ocurre qué cocinar con lo que hay.</p>
+          </article>
+          
+          <article class="problem-card fade-in">
+            <div class="problem-icon" aria-hidden="true">🥬</div>
+            <h3>Compras ingredientes que después se echan a perder</h3>
+            <p>Terminas tirando comida porque se te olvida o no sabes cómo usarla.</p>
+          </article>
+          
+          <article class="problem-card fade-in">
+            <div class="problem-icon" aria-hidden="true">😕</div>
+            <h3>Las dietas especiales parecen complicadas</h3>
+            <p>Keto, Paleo, sin gluten... Encontrar recetas que se adapten es un lío.</p>
+          </article>
+        </div>
+        
+        <p class="solution-text fade-in">
+          <strong>Alacena Mágica</strong> convierte ese caos en creatividad. Crea magia con lo que tienes. 🪄
+        </p>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 3: FEATURES
+         ═══════════════════════════════════════════════════ -->
+    <section id="features" class="features section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title" class="features-title fade-in">Tu asistente de cocina que sí te entiende</h2>
+        
+        <!-- Feature 1 -->
+        <div class="feature-block fade-in">
+          <div class="feature-content">
+            <span class="feature-microcopy">¿Qué tienes en la nevera? ¡Veamos qué podemos crear!</span>
+            <h3>Recetas que se adaptan a TI</h3>
+            <p>No más "te faltan 5 ingredientes". Alacena Mágica trabaja con lo que realmente tienes. Introduce lo que hay en tu despensa y recibe recetas personalizadas al instante.</p>
+          </div>
+          
+          <div class="feature-mockup">
+            <!-- Mockup 2: Recipe Generator -->
+            <div class="phone-mockup" role="img" aria-label="Generador de recetas con selección de ingredientes">
+              <div class="phone-screen">
+                <div class="generator-screen">
+                  <h3 class="generator-title">¿Qué tienes hoy?</h3>
+                  
+                  <div class="search-bar">
+                    <span class="search-icon" aria-hidden="true">🔍</span>
+                    <input type="text" placeholder="Busca un ingrediente..." aria-label="Buscar ingrediente">
+                  </div>
+                  
+                  <div class="categories-grid">
+                    <div class="category-item selected">
+                      <span class="category-emoji" aria-hidden="true">🍅</span>
+                      <span class="category-name">Tomate</span>
+                    </div>
+                    <div class="category-item selected">
+                      <span class="category-emoji" aria-hidden="true">🧅</span>
+                      <span class="category-name">Cebolla</span>
+                    </div>
+                    <div class="category-item">
+                      <span class="category-emoji" aria-hidden="true">🥕</span>
+                      <span class="category-name">Zanahoria</span>
+                    </div>
+                    <div class="category-item selected">
+                      <span class="category-emoji" aria-hidden="true">🧄</span>
+                      <span class="category-name">Ajo</span>
+                    </div>
+                    <div class="category-item">
+                      <span class="category-emoji" aria-hidden="true">🥦</span>
+                      <span class="category-name">Brócoli</span>
+                    </div>
+                    <div class="category-item selected">
+                      <span class="category-emoji" aria-hidden="true">🫑</span>
+                      <span class="category-name">Pimiento</span>
+                    </div>
+                  </div>
+                  
+                  <button class="generate-btn">✨ Crear magia con 4 ingredientes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-block reverse fade-in">
+          <div class="feature-content">
+            <span class="feature-microcopy">Modo Keto activado 🥑</span>
+            <h3>Tu dieta, tus reglas</h3>
+            <p>Keto, Paleo, Tradicional o "lo que me apetezca". Filtra recetas que se adapten a tu estilo de vida. Cambia de modo cuando quieras, sin compromisos.</p>
+          </div>
+          
+          <div class="feature-mockup">
+            <!-- Mockup 3: Recipe List -->
+            <div class="phone-mockup" role="img" aria-label="Lista de recetas con filtros de dieta">
+              <div class="phone-screen">
+                <div class="recipe-list-screen">
+                  <div class="filters-container">
+                    <button class="filter-chip">Todas</button>
+                    <button class="filter-chip active">Keto 🥑</button>
+                    <button class="filter-chip">Paleo</button>
+                    <button class="filter-chip">Vegana</button>
+                  </div>
+                  
+                  <div class="recipe-card">
+                    <div class="recipe-thumbnail">🥑</div>
+                    <div class="recipe-info">
+                      <div class="recipe-title">Ensalada César keto</div>
+                      <div class="recipe-meta">
+                        <span>⏱ 15 min</span>
+                        <span>🔥 Fácil</span>
+                      </div>
+                      <span class="recipe-match">✨ 92% match</span>
+                    </div>
+                  </div>
+                  
+                  <div class="recipe-card">
+                    <div class="recipe-thumbnail">🍳</div>
+                    <div class="recipe-info">
+                      <div class="recipe-title">Revuelto con aguacate</div>
+                      <div class="recipe-meta">
+                        <span>⏱ 10 min</span>
+                        <span>🔥 Muy fácil</span>
+                      </div>
+                      <span class="recipe-match">✨ 88% match</span>
+                    </div>
+                  </div>
+                  
+                  <div class="recipe-card">
+                    <div class="recipe-thumbnail">🥗</div>
+                    <div class="recipe-info">
+                      <div class="recipe-title">Bowl mediterráneo</div>
+                      <div class="recipe-meta">
+                        <span>⏱ 20 min</span>
+                        <span>🔥 Fácil</span>
+                      </div>
+                      <span class="recipe-match">✨ 85% match</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <nav class="app-nav" aria-label="Navegación de la app">
+                  <a href="#" class="nav-item" aria-label="Inicio">
+                    <span class="nav-item-icon">🏠</span>
+                    <span>Inicio</span>
+                  </a>
+                  <a href="#" class="nav-item active" aria-label="Buscar">
+                    <span class="nav-item-icon">🔍</span>
+                    <span>Buscar</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Despensa">
+                    <span class="nav-item-icon">📦</span>
+                    <span>Despensa</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Perfil">
+                    <span class="nav-item-icon">👤</span>
+                    <span>Perfil</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-block fade-in">
+          <div class="feature-content">
+            <span class="feature-microcopy">¡Hoy has salvado 3 ingredientes!</span>
+            <h3>Menos desperdicio, más ahorro</h3>
+            <p>Controla tus ingredientes, recibe alertas amigables y descubre recetas para usar lo que está por vencer. Ahorra dinero mientras cuidas el planeta.</p>
+          </div>
+          
+          <div class="feature-mockup">
+            <!-- Mockup 4: Pantry Dashboard -->
+            <div class="phone-mockup" role="img" aria-label="Dashboard de despensa con estadísticas de ahorro">
+              <div class="phone-screen">
+                <div class="pantry-screen">
+                  <h3 class="pantry-title">Tu despensa mágica</h3>
+                  
+                  <div class="pantry-stats">
+                    <div class="pantry-stat">
+                      <div class="pantry-stat-value">💚 12</div>
+                      <div class="pantry-stat-label">ingredientes salvados</div>
+                    </div>
+                    <div class="pantry-stat">
+                      <div class="pantry-stat-value">💰 8,50€</div>
+                      <div class="pantry-stat-label">ahorrado este mes</div>
+                    </div>
+                  </div>
+                  
+                  <div class="pantry-list">
+                    <div class="pantry-item">
+                      <div class="pantry-item-info">
+                        <span class="pantry-item-emoji" aria-hidden="true">🍅</span>
+                        <span class="pantry-item-name">Tomates</span>
+                      </div>
+                      <span class="pantry-item-days ok">5 días</span>
+                    </div>
+                    
+                    <div class="pantry-item">
+                      <div class="pantry-item-info">
+                        <span class="pantry-item-emoji" aria-hidden="true">🧀</span>
+                        <span class="pantry-item-name">Queso fresco</span>
+                      </div>
+                      <span class="pantry-item-days warning">2 días</span>
+                    </div>
+                    
+                    <div class="pantry-item">
+                      <div class="pantry-item-info">
+                        <span class="pantry-item-emoji" aria-hidden="true">🥚</span>
+                        <span class="pantry-item-name">Huevos</span>
+                      </div>
+                      <span class="pantry-item-days ok">12 días</span>
+                    </div>
+                    
+                    <div class="pantry-item">
+                      <div class="pantry-item-info">
+                        <span class="pantry-item-emoji" aria-hidden="true">🥛</span>
+                        <span class="pantry-item-name">Leche</span>
+                      </div>
+                      <span class="pantry-item-days urgent">¡Hoy!</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <nav class="app-nav" aria-label="Navegación de la app">
+                  <a href="#" class="nav-item" aria-label="Inicio">
+                    <span class="nav-item-icon">🏠</span>
+                    <span>Inicio</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Buscar">
+                    <span class="nav-item-icon">🔍</span>
+                    <span>Buscar</span>
+                  </a>
+                  <a href="#" class="nav-item active" aria-label="Despensa">
+                    <span class="nav-item-icon">📦</span>
+                    <span>Despensa</span>
+                  </a>
+                  <a href="#" class="nav-item" aria-label="Perfil">
+                    <span class="nav-item-icon">👤</span>
+                    <span>Perfil</span>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 4: HOW IT WORKS
+         ═══════════════════════════════════════════════════ -->
+    <section id="how-it-works" class="how-it-works section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title" class="how-title fade-in">Crear magia es más fácil de lo que piensas</h2>
+        
+        <div class="how-steps">
+          <article class="how-step fade-in">
+            <div class="step-number">1</div>
+            <h3>Cuéntanos qué tienes</h3>
+            <p>Introduce los ingredientes de tu despensa</p>
+          </article>
+          
+          <article class="how-step fade-in">
+            <div class="step-number">2</div>
+            <h3>Elige tu estilo</h3>
+            <p>Keto, Paleo, sin gluten, o lo que prefieras</p>
+          </article>
+          
+          <article class="how-step fade-in">
+            <div class="step-number">3</div>
+            <h3>Descubre recetas</h3>
+            <p>Recibe opciones deliciosas que puedes hacer HOY</p>
+          </article>
+          
+          <article class="how-step fade-in">
+            <div class="step-number">4</div>
+            <h3>Cocina y celebra</h3>
+            <p>Disfruta tu creación y mira cuánto has ahorrado</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 5: BENEFITS / SOCIAL PROOF
+         ═══════════════════════════════════════════════════ -->
+    <section id="benefits" class="benefits section" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="benefits-title fade-in">Magia real, resultados reales</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-card fade-in">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">recetas generadas</div>
+          </div>
+          
+          <div class="stat-card fade-in">
+            <div class="stat-number">80%</div>
+            <div class="stat-label">menos desperdicio</div>
+          </div>
+          
+          <div class="stat-card fade-in">
+            <div class="stat-number">3hrs</div>
+            <div class="stat-label">ahorradas a la semana</div>
+          </div>
+        </div>
+        
+        <div class="testimonials-grid">
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-text">"Pensé que cocinar con lo que tenía era imposible. ¡Alacena Mágica me ha sorprendido! Ahora miro la nevera con otros ojos."</p>
+            <p class="testimonial-author">— María, Madrid</p>
+          </article>
+          
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-text">"Por fin una app que no me hace sentir culpable por no tener ingredientes gourmet. Simple, práctica y efectiva."</p>
+            <p class="testimonial-author">— Carlos, Barcelona</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 6: GALLERY
+         ═══════════════════════════════════════════════════ -->
+    <section id="gallery" class="gallery section" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="gallery-title fade-in">Así se ve la magia en acción</h2>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in">
+            <div class="gallery-mockup-wrapper">
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="app-header">
+                    <div class="app-greeting">Buenos días 👋</div>
+                  </div>
+                  <div class="magic-card">
+                    <div class="magic-card-title">✨ 8 ingredientes</div>
+                    <div class="magic-card-text">12 recetas posibles</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-label">Inicio</div>
+          </div>
+          
+          <div class="gallery-item fade-in">
+            <div class="gallery-mockup-wrapper">
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="generator-screen">
+                    <h3 class="generator-title">¿Qué tienes?</h3>
+                    <div class="categories-grid">
+                      <div class="category-item selected"><span class="category-emoji">🍅</span></div>
+                      <div class="category-item selected"><span class="category-emoji">🧅</span></div>
+                      <div class="category-item"><span class="category-emoji">🥕</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-label">Generador</div>
+          </div>
+          
+          <div class="gallery-item fade-in">
+            <div class="gallery-mockup-wrapper">
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="recipe-list-screen">
+                    <div class="filters-container">
+                      <button class="filter-chip active">Keto 🥑</button>
+                    </div>
+                    <div class="recipe-card">
+                      <div class="recipe-thumbnail">🥑</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-label">Recetas</div>
+          </div>
+          
+          <div class="gallery-item fade-in">
+            <div class="gallery-mockup-wrapper">
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="pantry-screen">
+                    <h3 class="pantry-title">Tu despensa</h3>
+                    <div class="pantry-stats">
+                      <div class="pantry-stat">
+                        <div class="pantry-stat-value">💚 12</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-label">Despensa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════════════════════════
+         SECCIÓN 7: FINAL CTA
+         ═══════════════════════════════════════════════════ -->
+    <section id="final-cta" class="final-cta section" aria-labelledby="final-cta-title">
+      <div class="container">
+        <h2 id="final-cta-title" class="fade-in">¿Listo para crear magia?</h2>
+        <p class="fade-in">Únete a la revolución de la cocina consciente. Sin complicaciones, sin desperdicio.</p>
+        <a href="gracias.html" class="btn btn-accent btn-lg fade-in">Quiero probar Alacena Mágica →</a>
+        <p class="final-cta-micro fade-in">Disponible pronto. Sé de los primeros en saber cuándo lanzamos.</p>
+      </div>
+    </section>
+  </main>
+  
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logos/Alacena_Magica_Logo.svg" alt="Logo Alacena Mágica" width="40" height="40">
+            <span>Alacena Mágica</span>
+          </div>
+          <p class="footer-tagline">Crea magia con lo que tienes 🪄</p>
+          
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span aria-hidden="true">📷</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <span aria-hidden="true">📘</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <span aria-hidden="true">🐦</span>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <span aria-hidden="true">🎵</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#features">Características</a></li>
+            <li><a href="#how-it-works">Cómo funciona</a></li>
+            <li><a href="#benefits">Beneficios</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Política de privacidad</a></li>
+            <li><a href="terms.html">Términos y condiciones</a></li>
+            <li><a href="unsubscribe.html">Darse de baja</a></li>
+          </ul>
+          
+          <h4 style="margin-top: var(--space-md);">Contacto</h4>
+          <ul>
+            <li><a href="mailto:hola@alacenamagica.com" class="footer-email">hola@alacenamagica.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alacena Mágica. Todos los derechos reservados. Hecho con 💚 y mucha magia.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
