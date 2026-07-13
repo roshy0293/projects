@@ -1,78 +1,228 @@
-# CLIENT CONTEXT FILE — Alacena Magica
-# Language: ES — paste this as the FIRST message in every new App session
-# Last updated: 2026-07
+CONTEXTO DEL PROYECTO
 
-## Client Identity
-- Name: Alacena_Magica
-- Industry: Luxury architecture and interior design
-- Website: https://studioarq.co
-- Founded: 2004 — 20+ years of experience
-- Location: Medellín, Colombia
-- Target audience: High-net-worth individuals and premium corporations
+**Industria:** FoodTech / Personal Cooking Assistant
+**Producto:** Landing page de caso de estudio (la app aún no existe, se presenta como si existiera)
+**Público:** Personas que quieren cocinar con lo que tienen en casa, reducir desperdicio y seguir dietas específicas sin complicaciones.
 
-## Brand Voice & Tone
-- Elegant, sophisticated, refined — think Architectural Digest magazine
-- Formal but warm — never cold, corporate, or robotic
-- Use visual and sensory language: textures, light, space, atmosphere
-- Convey exclusivity without arrogance
-- Never use: "cheap", "affordable", "budget", "discount", "quick turnaround"
-- Never use: Bullet-point lists in hero sections — use flowing editorial prose
-- Always feel like: A trusted advisor with impeccable taste, not a salesperson
+**Servicios que ofrece la app:**
+1. Generación inteligente de recetas basada en ingredientes disponibles.
+2. Filtros dinámicos de dietas personalizadas (Keto, Paleo, Tradicional).
+3. Herramientas de optimización de despensa para reducir el desperdicio de alimentos.
 
-## Color Palette
-- Primary background: #0A0A0A (near black)
-- Secondary background: #1A1A1A
-- Card background: #222222
-- Warm gold accent: #C9A84C (use for CTAs, highlights, decorative elements)
-- Primary text: #F5F2EC (warm cream — never pure white #FFFFFF)
-- Secondary text: #8A8880 (muted — for descriptions and metadata)
-- Border / divider: rgba(255,255,255,0.08)
+IDENTIDAD VISUAL Y BRAND VOICE
 
-## Typography Rules
-- Display font (headings): Playfair Display — loaded from Google Fonts
-- Body font: DM Sans — loaded from Google Fonts
-- Heading style: Large, editorial, generous line-height (1.1–1.2), font-weight 700
-- FORBIDDEN fonts: Arial, Helvetica, Roboto, Inter, system-ui, sans-serif defaults
-- Always import via: Google Fonts link tag in <head>
+**Brand Voice & Tone:**
+- Adjetivos: Amigable, Orgánico, Práctico.
+- Sensación: Como recibir consejos de un amigo experto en la cocina que te ayuda a resolver problemas sin complicaciones.
+- NUNCA usar: "Pretensioso", "Industrial", "Complicado", "Tecnocrático".
+- SIEMPRE debe sentirse: Un asistente que te empodera a crear algo delicioso con lo que ya tienes en casa.
 
-## Services Offered
-1. Luxury residential architecture (new builds and renovations)
-2. Interior design & decoration for premium spaces
-3. High-end commercial architecture (hotels, offices, retail)
-4. Premium materials & finishes consulting
-5. Full project management from design to delivery
+**Idioma:** Español de España (tuteo, pretérito perfecto compuesto: "has salvado", vocabulario local: "nevera" no "refri")
 
-## Key Brand Messages — Use These In Copy
-- "Spaces that tell your story"
-- "Every project is unique, like those who live in it"
-- "20 years transforming the concept of home in Colombia"
-- "Where architecture meets art"
+**Paleta de Colores (variables CSS en :root):**
+- --verde-marca: #459b5b (principal, CTAs)
+- --verde-oscuro: #1d381c (textos principales, fondos oscuros)
+- --terracota: #e28538 (accent, elementos mágicos)
+- --amarillo: #eacc34 (highlights, CTAs secundarios)
+- --gris-oscuro: #40403f (texto secundario)
+- --crema: #f5f1e8 (fondos suaves)
+- --blanco: #ffffff
+- --gris-claro: #e8e4dc (bordes, separadores)
 
-## What NEVER to Include
-- No price ranges or investment estimates
-- No comparisons with competitors
-- No aggressive sales language or urgency tactics ("limited time", "act now")
-- No stock photography or placeholder images — use real client assets only
-- No generic icons from icon libraries — use simple CSS shapes or SVG
+**Tipografías (Google Fonts):**
+- 'Outfit' o 'Nunito' (display/headlines) - redondeada, amigable
+- 'Quicksand' o 'Inter' (body) - legible, limpia
 
-## Notable Projects (for testimonials and case studies)
-- GEA Corporate Headquarters — 3,200 sqm commercial renovation, Medellín
-- Dann Carlton Hotel Lobby — full interior redesign, Medellín
-- Restrepo Family Estate — luxury country home, El Retiro, Antioquia
+**Elementos visuales clave:**
+- Logo: Cuchara con destellos mágicos (🪄)
+- Formas orgánicas (curvas, no cuadrados perfectos)
+- Íconos estilo "hand-drawn" o con bordes redondeados
+- Fotos de comida real, cálida, "hecha en casa"
+- Mockups de la app integrados en HTML/CSS puro (sin imágenes externas)
 
-## Platform & Technical Setup
-- CMS: WordPress + Elementor Pro
-- Theme: Hello Elementor (minimal base — no pre-built styles to conflict)
-- Method: Each page section = one self-contained HTML Widget in Elementor
-- CSS prefix: --arq- (all custom CSS variables must start with this prefix)
-- No external JS libraries — pure CSS/vanilla JS only unless absolutely necessary
-- All sections must work without depending on the WordPress theme
+REFERENTES DE INSPIRACIÓN (ANALIZAR ESTILOS)
 
-## Available Assets
-- Hero image: /assets/images/hero/main-facade.jpg (4K landscape, use as poster)
-- Team photos: /assets/images/team/ (8 photos, square format 800×800px)
-- Project portfolio: /assets/images/projects/ (24 high-res photos, mixed ratios)
-- Logo — dark backgrounds: /assets/logos/logo-gold.svg
-- Logo — light backgrounds: /assets/logos/logo-dark.svg
-- Main showreel: /assets/videos/showreel-2024.mp4 (2:34 min, 1080p, use autoplay/muted/loop)
-- Process clip: /assets/videos/construction-process.mp4 (1:12 min, 1080p)
+Antes de diseñar, analiza el estilo y UX de estas 3 referencias:
+
+1. **Too Good To Go** (https://www.toogoodtogo.com/es)
+   - Inspiración: Tono amigable, enfoque en reducción de desperdicio, gamificación positiva del ahorro, estadísticas de impacto visual.
+
+2. **KitchenPal** (https://kitchenpalapp.com/en/)
+   - Inspiración: Gestión de despensa, escaneo de ingredientes, alertas de caducidad, interfaz limpia para control de inventario.
+
+3. **FridgeMate - Behance** (https://www.behance.net/gallery/250586461/FridgeMate-AI-Food-Planner-Smart-Fridge-Mobile-App)
+   - Inspiración PRINCIPAL: Diseño visual de la app, mockups de móvil, layout de pantallas, uso de chips para ingredientes, tarjetas de recetas, dashboard de despensa.
+
+ ESTRUCTURA DE LA LANDING PAGE
+
+**Sección 1: HERO (Above the fold)**
+- Layout: Grid 2 columnas (texto izquierda, mockup móvil derecha)
+- Headline: "¿Qué tienes en la nevera? ¡Veamos qué podemos crear!"
+- Subheadline: "Transforma los ingredientes que ya tienes en recetas deliciosas. Sin desperdicio, sin complicaciones, pura magia culinaria."
+- CTA Principal: "Descubre la magia →" (verde #459b5b)
+- CTA Secundario: "Ver cómo funciona" (outline)
+- Mockup: Pantalla de inicio de la app (home con saludo, tarjeta mágica, ingredientes en chips, receta sugerida)
+
+**Sección 2: PROBLEM/SOLUTION**
+- Título: "¿Te suena familiar?"
+- 3 cards con íconos orgánicos:
+  1. "Abres la nevera y... nada te inspira" (🧊)
+  2. "Compras ingredientes que después se echan a perder" (🥬)
+  3. "Las dietas especiales parecen complicadas" (😕)
+- Solución: "**Alacena Mágica** convierte ese caos en creatividad. Crea magia con lo que tienes."
+
+**Sección 3: FEATURES (3 bloques alternados)**
+- Título: "Tu asistente de cocina que sí te entiende"
+- Feature 1: "Recetas que se adaptan a TI"
+  * Copy: "No más 'te faltan 5 ingredientes'. Alacena Mágica trabaja con lo que realmente tienes."
+  * Microcopy destacado: "¿Qué tienes en la nevera? ¡Veamos qué podemos crear!"
+  * Mockup: Pantalla de generador de recetas (selección de ingredientes con chips)
+- Feature 2: "Tu dieta, tus reglas"
+  * Copy: "Keto, Paleo, Tradicional o 'lo que me apetezca'. Filtra recetas que se adapten a tu estilo de vida."
+  * Microcopy destacado: "Modo Keto activado 🥑"
+  * Mockup: Lista de recetas con filtros de dieta activos
+- Feature 3: "Menos desperdicio, más ahorro"
+  * Copy: "Controla tus ingredientes, recibe alertas amigables y descubre recetas para usar lo que está por vencer."
+  * Microcopy destacado: "¡Hoy has salvado 3 ingredientes!"
+  * Mockup: Dashboard de despensa con stats de ahorro
+
+**Sección 4: HOW IT WORKS**
+- Título: "Crear magia es más fácil de lo que piensas"
+- 4 pasos con números grandes en círculos verdes:
+  1. "Cuéntanos qué tienes" - Introduce los ingredientes de tu despensa
+  2. "Elige tu estilo" - Keto, Paleo, sin gluten, o lo que prefieras
+  3. "Descubre recetas" - Recibe opciones deliciosas que puedes hacer HOY
+  4. "Cocina y celebra" - Disfruta tu creación y mira cuánto has ahorrado
+
+**Sección 5: BENEFITS / SOCIAL PROOF**
+- Título: "Magia real, resultados reales"
+- 3 stats grandes:
+  * "500+ recetas generadas"
+  * "80% menos desperdicio"
+  * "3hrs ahorradas a la semana"
+- 2 testimonios ficticios:
+  * "Pensé que cocinar con lo que tenía era imposible. ¡Alacena Mágica me ha sorprendido!" — María, Madrid
+  * "Por fin una app que no me hace sentir culpable por no tener ingredientes gourmet" — Carlos, Barcelona
+
+**Sección 6: GALLERY**
+- Título: "Así se ve la magia en acción"
+- 4 mockups en miniatura de las pantallas principales con etiquetas
+
+**Sección 7: FINAL CTA**
+- Fondo verde oscuro #1d381c
+- Headline: "¿Listo para crear magia?"
+- Sub: "Únete a la revolución de la cocina consciente. Sin complicaciones, sin desperdicio."
+- CTA: "Quiero probar Alacena Mágica →" (amarillo #eacc34)
+- Microcopy: "Disponible pronto. Sé de los primeros en saber cuándo lanzamos."
+
+**Sección 8: FOOTER**
+- Logo + tagline "Crea magia con lo que tienes"
+- Links: Sobre nosotros | Cómo funciona | Contacto
+- Redes sociales
+- Email: hola@alacenamagica.com
+- Copyright 2026
+
+MOCKUPS DE LA APP (HTML/CSS PURO)
+
+Genera 4 mockups de móvil integrados en HTML/CSS (sin imágenes externas):
+
+**Mockup 1 - Home Screen:**
+- Header con saludo "Buenos días 👋 María"
+- Tarjeta mágica verde con gradiente: "✨ Tienes 8 ingredientes listos - Podemos crear 12 recetas mágicas"
+- Chips de ingredientes: 🍅 Tomate, 🧀 Queso, 🥚 Huevos, 🧄 Ajo, 🫒 Aceite, + Añadir
+- Receta sugerida con thumbnail en gradiente naranja/amarillo: "Tortilla española express - ⏱ 20 min · 🔥 Fácil · ✨ 95% match"
+- Navegación inferior: Inicio, Buscar, Despensa, Perfil
+
+**Mockup 2 - Recipe Generator:**
+- Título: "¿Qué tienes hoy?"
+- Buscador de ingredientes
+- Categorías con grid de emojis seleccionables (Tomate, Cebolla, Zanahoria, Ajo, Brócoli, Pimiento)
+- Algunos items con estado "selected" (borde verde)
+- Botón final: "✨ Crear magia con 5 ingredientes"
+
+**Mockup 3 - Recipe List:**
+- Filtros horizontales: Todas | Keto 🥑 | Paleo | Vegana
+- Lista de recetas en cards horizontales:
+  * Tortilla española express (95% match)
+  * Ensalada mediterránea (88% match)
+  * Pasta al ajo y tomate (82% match)
+- Thumbnails con gradientes cálidos
+
+**Mockup 4 - Pantry Dashboard:**
+- Título: "Tu despensa mágica"
+- Stats: 💚 12 ingredientes salvados | 💰 8,50€ ahorrado
+- Lista de productos con alertas de caducidad:
+  * 🍅 Tomates - 5 días (verde)
+  * 🧀 Queso fresco - 2 días (amarillo)
+  * 🥚 Huevos - 12 días (verde)
+  * 🥛 Leche - ¡Hoy! (naranja urgente)
+
+**Estilo de los mockups:**
+- Marco de teléfono realista (notch, bordes redondeados 40px, sombra)
+- Pantalla interior con fondo crema #f5f1e8
+- Tipografía Nunito para títulos
+- Chips con bordes redondeados
+- Gradientes cálidos en thumbnails de recetas
+- Sistema de colores para alertas (ok/warning/urgent)
+
+ESTRUCTURA DE PROYECTO
+
+Implementa una arquitectura modular:
+- /index.html (landing principal)
+- /css/styles.css (variables CSS, resets, componentes, secciones, responsive)
+- /js/main.js (menú móvil, animaciones scroll, filtrado, interactividad)
+- /assets/ (logo, imágenes si las hay)
+
+REQUISITOS TÉCNICOS
+
+1. **HTML5 semántico:** Usa etiquetas apropiadas (header, main, section, article, footer)
+2. **CSS3 moderno:** 
+   - Variables CSS en :root para toda la paleta
+   - Flexbox y Grid para layouts
+   - Animaciones y transiciones suaves
+   - Media queries para responsive (mobile-first)
+3. **JavaScript nativo ES6+:**
+   - Menú móvil hamburguesa
+   - Scroll suave a secciones
+   - Animaciones on-scroll (Intersection Observer)
+   - Interactividad de filtros (si aplica)
+4. **Accesibilidad:**
+   - Atributos ARIA donde sea necesario
+   - Contraste de colores WCAG AA
+   - Navegación por teclado
+   - Alt text descriptivo
+5. **Rendimiento:**
+   - CSS y JS optimizados
+   - Lazy loading si hay imágenes
+   - Fuentes con display=swap
+   - Sin dependencias externas (excepto Google Fonts)
+6. **Responsive:** Breakpoints en 480px, 768px, 968px, 1200px
+
+REGLAS DE MICROCOPY
+
+✅ SÍ usar:
+- "¿Qué tienes en la nevera?"
+- "Crea magia"
+- "¡Hoy has salvado 3 ingredientes!"
+- "Modo Keto activado 🥑"
+- "Veamos qué podemos crear"
+- Tuteo cercano y amigable
+
+❌ NUNCA usar:
+- "Ingrese parámetros"
+- "Optimización activada"
+- "Sincronización de inventario"
+- Lenguaje técnico o corporativo
+- Voseo argentino
+
+═══════════════════════════════════════════════════
+🚀 INSTRUCCIONES FINALES
+═══════════════════════════════════════════════════
+
+1. Escanea el directorio /assets para confirmar acceso a logo e imágenes.
+2. Propón la estructura final de archivos antes de escribir código.
+3. Genera el código completo, modular y comentado.
+4. Asegúrate de que los mockups de la app sean 100% HTML/CSS (sin imágenes externas).
+5. Verifica que todo sea responsive y accesible.
+6. NO uses lorem ipsum. Todo el contenido debe ser el copy real definido arriba.
+7. Inspírate visualmente en Too Good To Go, KitchenPal y FridgeMate para el tono y UX.
