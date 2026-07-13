@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Darse de baja de la lista de correo de Alacena Mágica - Cancela tu suscripción fácilmente.">
+  <meta name="theme-color" content="#459b5b">
+  
+  <title>Darse de Baja - Alacena Mágica</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logos/Alacena_Magica_Logo.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="nav-logo" aria-label="Alacena Mágica - Inicio">
+        <img src="assets/logos/Alacena_Magica_Logo.svg" alt="Logo Alacena Mágica" width="48" height="48">
+        <span>Alacena Mágica</span>
+      </a>
+      
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="index.html#features" class="nav-link">Características</a></li>
+        <li><a href="index.html#how-it-works" class="nav-link">Cómo funciona</a></li>
+        <li><a href="index.html#final-cta" class="btn btn-primary btn-sm">Descubre la magia →</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main role="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Darse de Baja</h1>
+        <p>Lamentamos verte partir, pero respetamos tu decisión 💚</p>
+      </div>
+    </section>
+    
+    <!-- Page Content -->
+    <section class="page-content">
+      <div class="container">
+        <div class="form-container">
+          <form id="unsubscribe-form" aria-labelledby="form-title">
+            <h2 id="form-title" style="text-align: center; margin-bottom: var(--space-md); color: var(--verde-oscuro);">Cancelar suscripción</h2>
+            
+            <p style="text-align: center; margin-bottom: var(--space-md); color: var(--gris-oscuro);">
+              Introduce el correo electrónico con el que te registraste y te daremos de baja inmediatamente.
+            </p>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="tu@email.com" 
+                required
+                aria-required="true"
+                autocomplete="email"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="reason" class="form-label">¿Por qué te vas? (opcional)</label>
+              <select id="reason" name="reason" class="form-input">
+                <option value="">Selecciona una opción</option>
+                <option value="no-interes">Ya no me interesa el servicio</option>
+                <option value="demasiados-emails">Recibo demasiados correos</option>
+                <option value="encontre-alternativa">Encontré una alternativa</option>
+                <option value="otro">Otro motivo</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: var(--space-xs); cursor: pointer;">
+                <input type="checkbox" name="feedback" style="margin-top: 4px;">
+                <span style="font-size: 0.875rem; color: var(--gris-oscuro);">Me gustaría recibir una encuesta breve para mejorar el servicio</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+              Darme de baja
+            </button>
+            
+            <p style="text-align: center; margin-top: var(--space-md); font-size: 0.875rem; color: var(--gris-oscuro);">
+              Al hacer clic, serás eliminado de nuestra lista de correo en menos de 24 horas.
+            </p>
+          </form>
+          
+          <div style="text-align: center; margin-top: var(--space-lg); padding-top: var(--space-md); border-top: 1px solid var(--gris-claro);">
+            <p style="margin-bottom: var(--space-sm); color: var(--verde-oscuro); font-weight: 600;">¿Cambiaste de opinión?</p>
+            <a href="index.html" class="back-link">← Volver al inicio y descubrir más magia</a>
+          </div>
+        </div>
+        
+        <div style="max-width: 600px; margin: var(--space-xl) auto 0; text-align: center;">
+          <h3 style="color: var(--verde-marca); margin-bottom: var(--space-sm);">Antes de irte...</h3>
+          <p style="color: var(--gris-oscuro);">
+            ¿Sabías que puedes configurar la frecuencia de los correos en tu perfil? Si el problema es recibir demasiados emails, considera cambiar a nuestro resumen semanal en lugar de darte de baja completamente.
+          </p>
+          <p style="margin-top: var(--space-sm); color: var(--gris-oscuro);">
+            También puedes seguirnos en redes sociales para mantenerte conectado sin llenar tu bandeja de entrada:
+          </p>
+          <div class="footer-social" style="justify-content: center; margin-top: var(--space-md);">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <span aria-hidden="true">📷</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <span aria-hidden="true">📘</span>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <span aria-hidden="true">🐦</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/logos/Alacena_Magica_Logo.svg" alt="Logo Alacena Mágica" width="40" height="40">
+            <span>Alacena Mágica</span>
+          </div>
+          <p class="footer-tagline">Crea magia con lo que tienes 🪄</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html#hero">Inicio</a></li>
+            <li><a href="index.html#features">Características</a></li>
+            <li><a href="index.html#how-it-works">Cómo funciona</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Política de privacidad</a></li>
+            <li><a href="terms.html">Términos y condiciones</a></li>
+            <li><a href="unsubscribe.html">Darse de baja</a></li>
+          </ul>
+          
+          <h4 style="margin-top: var(--space-md);">Contacto</h4>
+          <ul>
+            <li><a href="mailto:hola@alacenamagica.com" class="footer-email">hola@alacenamagica.com</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alacena Mágica. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
